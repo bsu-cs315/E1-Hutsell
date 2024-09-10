@@ -32,7 +32,7 @@ sources/0 = SubResource("TileSetAtlasSource_gy70n")
 [node name="Level" type="Node2D"]
 
 [node name="Ball" parent="." instance=ExtResource("1_2epw2")]
-position = Vector2(228, 107)
+position = Vector2(151, 272)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(226, 106)
