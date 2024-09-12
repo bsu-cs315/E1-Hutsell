@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://dgt8yyu0fgq3w"]
+[gd_scene load_steps=6 format=4 uid="uid://dgt8yyu0fgq3w"]
 
 [ext_resource type="PackedScene" uid="uid://bfucxyp3j5gv7" path="res://src/Ball.tscn" id="1_2epw2"]
 [ext_resource type="Texture2D" uid="uid://c5n7g0we4tdki" path="res://assets/elementWood010.png" id="2_a1u75"]
+[ext_resource type="Script" path="res://src/power_label.gd" id="3_t0l2i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_flt5s"]
 texture = ExtResource("2_a1u75")
@@ -21,5 +22,12 @@ position = Vector2(151, 272)
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="."]
 position = Vector2(356, 366)
-tile_map_data = PackedByteArray("AAD7/wMAAAAAAAAAAAD8/wMAAAAAAAAAAAD9/wMAAAAAAAAAAAD+/wMAAAAAAAAAAAD//wMAAAAAAAAAAAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAAAAAAAAAADAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAAFAAMAAAAAAAAAAAAGAAMAAAAAAAAAAAAHAAMAAAAAAAAAAAAIAAMAAAAAAAAAAAAJAAMAAAAAAAAAAAAKAAMAAAAAAAAAAAALAAMAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAD7/wMAAAAAAAAAAAD8/wMAAAAAAAAAAAD9/wMAAAAAAAAAAAD+/wMAAAAAAAAAAAD//wMAAAAAAAAAAAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAAAAAAAAAADAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAAFAAMAAAAAAAAAAAAGAAMAAAAAAAAAAAAHAAMAAAAAAAAAAAAIAAMAAAAAAAAAAAAJAAMAAAAAAAAAAAAKAAMAAAAAAAAAAAALAAMAAAAAAAAAAAAMAAIAAAAAAAAAAAAMAAEAAAAAAAAAAAAMAAAAAAAAAAAAAAAMAP//AAAAAAAAAAAMAP7/AAAAAAAAAAAMAP3/AAAAAAAAAAAMAPz/AAAAAAAAAAAMAPv/AAAAAAAAAAD6/wIAAAAAAAAAAAD6/wEAAAAAAAAAAAD6/wAAAAAAAAAAAAD6////AAAAAAAAAAD6//7/AAAAAAAAAAD6//3/AAAAAAAAAAD6//z/AAAAAAAAAAD6//v/AAAAAAAAAAA=")
 tile_set = SubResource("TileSet_mxqvt")
+
+[node name="PowerLabel" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 132.0
+offset_bottom = 26.0
+script = ExtResource("3_t0l2i")
