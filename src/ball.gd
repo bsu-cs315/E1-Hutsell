@@ -4,7 +4,7 @@ extends RigidBody2D
 var max_strength : float = 1000 
 var min_strength : float = 100   
 
-#@onready var power_label = $PowerLabel  
+@onready var power_label = $PowerLabel  
 
 
 func _physics_process(_delta):
@@ -24,5 +24,5 @@ func _physics_process(_delta):
 		print("Launching with strength: ", strength)
 		linear_velocity = velocity
 	
-#	power_label.text = "Power: " + str(strength)
+
 		

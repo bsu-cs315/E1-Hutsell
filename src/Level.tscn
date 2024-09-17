@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=4 uid="uid://dgt8yyu0fgq3w"]
+[gd_scene load_steps=5 format=4 uid="uid://dgt8yyu0fgq3w"]
 
 [ext_resource type="PackedScene" uid="uid://bfucxyp3j5gv7" path="res://src/Ball.tscn" id="1_2epw2"]
 [ext_resource type="Texture2D" uid="uid://c5n7g0we4tdki" path="res://assets/elementWood010.png" id="2_a1u75"]
-[ext_resource type="Script" path="res://src/power_label.gd" id="3_t0l2i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_flt5s"]
 texture = ExtResource("2_a1u75")
@@ -30,4 +29,3 @@ offset_left = 4.0
 offset_top = 3.0
 offset_right = 132.0
 offset_bottom = 26.0
-script = ExtResource("3_t0l2i")
